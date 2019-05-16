@@ -1,0 +1,14 @@
+{
+  "modelId": "10083",
+  "featureNames": [
+    "datetime",
+    "season",
+    "holiday",
+    "workingday",
+    "weather",
+    "temp",
+    "atemp",
+    "humidity",
+    "windspeed"
+  ]
+}
