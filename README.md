@@ -1,6 +1,6 @@
-#PredictionReq checker 
+# PredictionReq checker 
 
-##System under test - REST API Service
+## System under test - REST API Service
 List of result codes that were tested.
 1. apiResSuccess = 0,
 2. apiResInvalidRequestFormat = 3,
@@ -8,17 +8,17 @@ List of result codes that were tested.
 4. apiResNoPointsForPredict = 12,
 5. apiResNotEnoughDataForPredict = 13
     
-##REQUEST INFO
+## REQUEST INFO
 ### Method 
 POST
 	
-###Request URI sample
+### Request URI sample
 http://somehost:someport/?cmd=predictionReq
 
-###HTTP Version
+### HTTP Version
 HTTP/1.1
 
-###Request Headers
+### Request Headers
 1. Content-Length
 Required. The length of the content body.
 2. Content-Type:application/json
@@ -26,7 +26,7 @@ Required, as the request body is sent in JSON format.
 3. Accept: application/json
 Required, as the response is sent in JSON format.
 
-###Sample Request
+### Sample Request
 ```json
 {
   "modelId": "10083",
@@ -68,17 +68,17 @@ Required, as the response is sent in JSON format.
 }
 ```
 
-##RESPONSE INFO
+## RESPONSE INFO
 
-###Status Code
+### Status Code
 A successful operation returns status code 200 (OK)
 
-###Response Headers
+### Response Headers
 The response may include standard HTTP headers. All standard headers conform to the HTTP/1.1 protocol specification
 1. Content-Type:application/json
 Indicates that the content body is in json format.
 
-###Sample Response
+### Sample Response
 ```json
 {
   "targetValName": "count",
