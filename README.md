@@ -1,5 +1,15 @@
 # PredictionReq checker 
 
+## Instalation requirements and steps
+1. Python 3.6
+2. pip3
+3. pip3 install -r test_utils/test_utils/requirements/base.txt
+4. Geckodriver for selenium tests(Ubuntu example) - https://askubuntu.com/questions/870530/how-to-install-geckodriver-in-ubuntu
+5. Set path to Geckodriver executable to system path. '''export PATH=$PATH:/path/to/'''
+
+## Run UI part
+robot Robot-framework-API-tests/tests/robot/tests/ui/ui_checks.robot
+
 ## System under test - REST API Service
 List of result codes that were tested.
 1. apiResSuccess = 0,
